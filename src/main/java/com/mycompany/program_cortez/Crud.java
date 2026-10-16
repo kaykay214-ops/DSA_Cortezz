@@ -194,7 +194,6 @@ private void checkStudentsTable() {
         jLabel3 = new javax.swing.JLabel();
         btnClear = new javax.swing.JButton();
         pnlStudentInfo = new javax.swing.JPanel();
-        lblStudentInformation = new javax.swing.JLabel();
         lblFirstName = new javax.swing.JLabel();
         lblMiddleInitial = new javax.swing.JLabel();
         lblLastName = new javax.swing.JLabel();
@@ -213,6 +212,7 @@ private void checkStudentsTable() {
         btnAdd = new javax.swing.JButton();
         btnUpdate = new javax.swing.JButton();
         btnDelete = new javax.swing.JButton();
+        lblStudentInformation = new javax.swing.JLabel();
 
         jTextArea1.setColumns(20);
         jTextArea1.setRows(5);
@@ -269,7 +269,7 @@ private void checkStudentsTable() {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel1.setBackground(new java.awt.Color(102, 0, 0));
+        jPanel1.setBackground(new java.awt.Color(51, 51, 51));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         tblStudents.setModel(new javax.swing.table.DefaultTableModel(
@@ -288,34 +288,29 @@ private void checkStudentsTable() {
         });
         jScrollPane1.setViewportView(tblStudents);
 
-        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 160, 550, 360));
+        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(418, 150, 500, 400));
 
         jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 36)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setForeground(new java.awt.Color(102, 102, 102));
         jLabel2.setText("STUDENT MANAGEMENT SYSTEM");
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 20, 630, 60));
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 10, 630, 60));
 
         jLabel3.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel3.setForeground(new java.awt.Color(153, 153, 153));
         jLabel3.setText("List of Student");
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 120, 160, -1));
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 100, 160, -1));
 
-        btnClear.setBackground(new java.awt.Color(0, 0, 0));
-        btnClear.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        btnClear.setBackground(new java.awt.Color(102, 0, 0));
+        btnClear.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnClear.setForeground(new java.awt.Color(255, 255, 255));
         btnClear.setText("Clear");
         btnClear.setPreferredSize(new java.awt.Dimension(80, 40));
         btnClear.addActionListener(this::btnClearActionPerformed);
-        jPanel1.add(btnClear, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 60, 100, 50));
+        jPanel1.add(btnClear, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 100, 100, 30));
 
-        pnlStudentInfo.setBackground(new java.awt.Color(102, 0, 0));
+        pnlStudentInfo.setBackground(new java.awt.Color(51, 51, 51));
         pnlStudentInfo.setPreferredSize(new java.awt.Dimension(300, 400));
         pnlStudentInfo.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        lblStudentInformation.setFont(new java.awt.Font("Times New Roman", 1, 36)); // NOI18N
-        lblStudentInformation.setForeground(new java.awt.Color(255, 255, 255));
-        lblStudentInformation.setText("Students Info");
-        pnlStudentInfo.add(lblStudentInformation, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 0, -1, -1));
 
         lblFirstName.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         lblFirstName.setForeground(new java.awt.Color(255, 255, 255));
@@ -348,32 +343,38 @@ private void checkStudentsTable() {
         pnlStudentInfo.add(lblContact, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 270, -1, -1));
 
         txtFirstName.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        txtFirstName.setForeground(new java.awt.Color(204, 204, 204));
         txtFirstName.setText("Enter First Name");
         txtFirstName.setPreferredSize(new java.awt.Dimension(150, 25));
         txtFirstName.addActionListener(this::txtFirstNameActionPerformed);
         pnlStudentInfo.add(txtFirstName, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 70, -1, -1));
 
         txtMiddleInitial.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        txtMiddleInitial.setForeground(new java.awt.Color(204, 204, 204));
         txtMiddleInitial.setText("Enter Middle Initial");
         txtMiddleInitial.setPreferredSize(new java.awt.Dimension(150, 25));
         pnlStudentInfo.add(txtMiddleInitial, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 110, -1, -1));
 
         txtLastName.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        txtLastName.setForeground(new java.awt.Color(204, 204, 204));
         txtLastName.setText("Enter Last Name");
         txtLastName.setPreferredSize(new java.awt.Dimension(150, 25));
         pnlStudentInfo.add(txtLastName, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 150, -1, -1));
 
         txtContact.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        txtContact.setForeground(new java.awt.Color(204, 204, 204));
         txtContact.setText("Enter Contact Number");
         txtContact.setPreferredSize(new java.awt.Dimension(150, 25));
         pnlStudentInfo.add(txtContact, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 270, 150, -1));
 
         cmbCourse.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        cmbCourse.setForeground(new java.awt.Color(204, 204, 204));
         cmbCourse.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Select Course", "BSIT", "BSCS", "BSEMC", " " }));
         cmbCourse.setPreferredSize(new java.awt.Dimension(150, 25));
         pnlStudentInfo.add(cmbCourse, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 190, -1, -1));
 
         cmbYearLevel.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        cmbYearLevel.setForeground(new java.awt.Color(204, 204, 204));
         cmbYearLevel.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Select Year Level", "1st Year", "2nd Year", "3rd Year", "4th Year" }));
         cmbYearLevel.setPreferredSize(new java.awt.Dimension(150, 25));
         pnlStudentInfo.add(cmbYearLevel, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 230, -1, -1));
@@ -384,14 +385,14 @@ private void checkStudentsTable() {
         pnlStudentInfo.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 320, -1, -1));
         pnlStudentInfo.add(txtSearch, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 320, 100, 20));
 
-        btnSearch.setBackground(new java.awt.Color(0, 0, 0));
+        btnSearch.setBackground(new java.awt.Color(153, 153, 153));
         btnSearch.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         btnSearch.setForeground(new java.awt.Color(255, 255, 255));
         btnSearch.setText("SEARCH");
         btnSearch.addActionListener(this::btnSearchActionPerformed);
         pnlStudentInfo.add(btnSearch, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 320, 90, 20));
 
-        btnAdd.setBackground(new java.awt.Color(0, 0, 0));
+        btnAdd.setBackground(new java.awt.Color(51, 102, 0));
         btnAdd.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnAdd.setForeground(new java.awt.Color(255, 255, 255));
         btnAdd.setText("Add");
@@ -399,7 +400,7 @@ private void checkStudentsTable() {
         btnAdd.addActionListener(this::btnAddActionPerformed);
         pnlStudentInfo.add(btnAdd, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 360, -1, -1));
 
-        btnUpdate.setBackground(new java.awt.Color(0, 0, 0));
+        btnUpdate.setBackground(new java.awt.Color(0, 51, 153));
         btnUpdate.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnUpdate.setForeground(new java.awt.Color(255, 255, 255));
         btnUpdate.setText("Update");
@@ -407,7 +408,7 @@ private void checkStudentsTable() {
         btnUpdate.addActionListener(this::btnUpdateActionPerformed);
         pnlStudentInfo.add(btnUpdate, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 360, 90, -1));
 
-        btnDelete.setBackground(new java.awt.Color(0, 0, 0));
+        btnDelete.setBackground(new java.awt.Color(153, 0, 0));
         btnDelete.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnDelete.setForeground(new java.awt.Color(255, 255, 255));
         btnDelete.setText("Delete");
@@ -415,7 +416,12 @@ private void checkStudentsTable() {
         btnDelete.addActionListener(this::btnDeleteActionPerformed);
         pnlStudentInfo.add(btnDelete, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 360, 90, -1));
 
-        jPanel1.add(pnlStudentInfo, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 120, -1, -1));
+        lblStudentInformation.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        lblStudentInformation.setForeground(new java.awt.Color(153, 153, 153));
+        lblStudentInformation.setText("Students Info");
+        pnlStudentInfo.add(lblStudentInformation, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 0, -1, 30));
+
+        jPanel1.add(pnlStudentInfo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 140, -1, 410));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1010, 550));
 
